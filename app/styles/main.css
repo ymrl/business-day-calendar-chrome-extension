@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+html.popup body {
+  color: rgb(33, 33, 33);
+  padding: 8px;
+  width: 200px;
+}
+
+html.popup input[type="date"],
+html.popup input[type="number"],
+html.popup select {
+  padding: 4px;
+  border: 1px solid #B0BEC5;
+  border-radius: 5px;
+  background-color: #fff;
+  height: 24px;
+}
+
+html.popup input[type="date"] {
+  display: block;
+  text-align:center;
+  width: 100%;
+}
+
+html.popup input[type="number"].span-input{
+  text-align: center;
+  width: 40px;
+}
+
+html.popup select.span-option-select {
+  width: 80px;
+}
+
+html.popup div.span-setting {
+  margin: 8px 0;
+  text-align: center;
+  position: relative;
+}
+
+html.popup div.span-setting > * {
+  vertical-align: middle;
+}
+
+html.popup div.span-setting span.arrow-sign {
+  font-size:20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+html.popup #calendar button.calendar-control {
+  border: 1px solid #B0BEC5;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+html.popup #calendar button.calendar-control.prev {
+  float: left;
+}
+
+html.popup #calendar button.calendar-control.next {
+  float: right;
+}
+
+html.popup #calendar h1 {
+  text-align: center;
+  margin: 24px 0 8px;
+}
+
+html.popup #calendar table {
+  width: 100%;
+}
+
+html.popup #calendar table td,
+html.popup #calendar table th {
+  text-align: center;
+}
+
+html.popup #calendar table td{
+  cursor: pointer;
+  color: #FF5722;
+}
+
+
+html.popup #calendar table td.other-month {
+  opacity: 0.6;
+}
+
+html.popup #calendar table td.business-day {
+  background: #0277BD;
+  color: #fff;
+  border-radius: 4px;
+}
+
+html.popup #calendar table td.today {
+  font-weight: bold;
+}

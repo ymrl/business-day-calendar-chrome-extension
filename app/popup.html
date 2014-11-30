@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="popup">
+  <head>
+    <meta charset="utf-8">
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <section id="calculator">
+      <input type="date" name="startDate" v-model="startDate" v-on="change: calculate" required>
+      <div class="span-setting">
+        <span class="arrow-sign">&darr;</span>
+        <input class="span-input" type="number" name="span" min="1" v-on="change: calculate, keyup: calculate" v-model="span">
+        <select class="span-option-select" name="spanOption" v-on="change: calculate" v-model="spanOption">
+          <option value="business" data-i18n-message="businessDaysAfter">Business Days</option>
+          <option value="normal" data-i18n-message="daysAfter">Days</option>
+        </select>
+      </div>
+      <input type="date" name="startDate" v-model="endDate" v-on="change: calculatePrevious" required>
+      <section id="calendar">
+        <button class="calendar-control prev" v-on="click: calendarPrev">&larr;</button>
+        <button class="calendar-control next" v-on="click: calendarNext">&rarr;</button>
+        <h1>{{calendarYear}}-{{calendarMonth}}</h1>
+        <table>
+          <thead>
+            <tr>
+              <th data-i18n-message="Sun">Sun</th>
+              <th data-i18n-message="Mon">Mon</th>
+              <th data-i18n-message="Tue">Tue</th>
+              <th data-i18n-message="Wed">Wed</th>
+              <th data-i18n-message="Thu">Thu</th>
+              <th data-i18n-message="Fri">Fri</th>
+              <th data-i18n-message="Sat">Sat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-repeat="calendarWeeks">
+              <td v-repeat="days" v-class="today: today, other-month: otherMonth, business-day: businessDay" v-on="click: calendarClick" role="button">{{date}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/vue/dist/vue.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/i18n.js -->
+    <script src="scripts/i18n.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/popup.js -->
+    <script src="scripts/popup.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

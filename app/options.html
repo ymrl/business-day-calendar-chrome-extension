@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <section id="settings">
+      <h1 data-i18n-message="applicationSettings">Application Settings</h1>
+
+      <section id="weekdays" class="settings-category">
+        <h1 data-i18n-message="weekdaySettings">Weekdays</h1>
+        <p data-i18n-message="weekdaySettingsDescription">Check days to use as business days</p>
+        <table>
+          <thead>
+            <tr>
+              <th v-repeat="weekdays"><label for="weekday-{{index}}">{{label}}</label></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td v-repeat="weekdays"><input type="checkbox" name="weekday" value="{{index}}" id="weekday-{{index}}" v-model="use"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="external-calendars">
+        <h1 data-i18n-message="externalCalendarSettings">External Calendars</h1>
+        <ul>
+          <li v-repeat="externalCalendars">
+            <label>
+              <span data-i18n-message="calendarName">Name</span>
+              <input type="text" name="externalCalendars[]" v-model="name">
+            </label>
+            <label>
+              <span data-i18n-message="calendarURL">URL</span>
+              <input type="text" name="externalCalendars[]" v-model="url">
+            </label>
+            <button data-i18n-message="remove" v-on="click: removeUrl">Remove</button>
+          </li>
+          <li><button v-on="click: addUrl" data-i18n-message="add">Add</button></li>
+        </ul>
+      </section>
+      <button id="save-settings" v-on="click: save" data-i18n-message="save">Save</button>
+    </section>
+    <section>
+    </section>
+
+              
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/vue/dist/vue.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/i18n.js -->
+    <script src="scripts/i18n.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/settings.js -->
+    <script src="scripts/settings.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/options.js -->
+    <script src="scripts/options.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

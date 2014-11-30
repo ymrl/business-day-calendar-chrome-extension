@@ -1,0 +1,39 @@
+{
+  "appName": {
+    "message": "Business Day Calendar",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Tiny business calendar on your toolbar",
+    "description": "The description of the application"
+  },
+  "appliationSettings": {"message": "Application Settings"},
+
+  "businessDaysAfter": {"message": "business days"},
+  "daysAfter": {"message": "days"},
+  "weekdaySettings": {"message": "Weekday"},
+  "weekdaySettingsDescription": {"message": "Check days to use as business days"},
+  "externalCalendarSettings": {"message": "External Calendars"},
+  "add": {"message": "Add"},
+  "remove": {"message": "Remove"},
+  "save": {"message": "Save"},
+  "calendarName": {"message": "Title"},
+  "calendarURL": {"message": "URL"},
+
+
+  "Sunday":    {"message": "Sunday"   },
+  "Monday":    {"message": "Monday"   },
+  "Tuesday":   {"message": "Tuesday"  },
+  "Wednesday": {"message": "Wednesday"},
+  "Thursday":  {"message": "Thursday" },
+  "Friday":    {"message": "Friday"   },
+  "Saturday":  {"message": "Saturday" },
+ 
+  "Sun": {"message": "Sun"},
+  "Mon": {"message": "Mon"},
+  "Tue": {"message": "Tue"},
+  "Wed": {"message": "Wed"},
+  "Thu": {"message": "Thu"},
+  "Fri": {"message": "Fri"},
+  "Sat": {"message": "Sat"}
+}

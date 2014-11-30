@@ -1,0 +1,40 @@
+{
+  "appName": {
+    "message": "営業日カレンダー",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "営業日を見られるポップアップウィンドウを表示します",
+    "description": "The description of the application"
+  },
+  "appliationSettings": {"message": "営業日カレンダーの設定"},
+
+  "businessDaysAfter": {"message": "営業日後"},
+  "daysAfter": {"message": "日後"},
+  "weekdaySettings": {"message": "曜日の設定"},
+  "weekdaySettingsDescription": {"message": "営業日として使用する曜日にチェックを入れてください"},
+  "externalCalendarSettings": {"message": "外部カレンダーの設定"},
+  "add": {"message": "追加"},
+  "remove": {"message": "削除"},
+  "save": {"message": "保存"},
+  "calendarName": {"message": "カレンダー名"},
+  "calendarURL": {"message": "URL"},
+
+  "Sunday":    {"message": "日曜日"},
+  "Monday":    {"message": "月曜日"},
+  "Tuesday":   {"message": "火曜日"},
+  "Wednesday": {"message": "水曜日"},
+  "Thursday":  {"message": "木曜日"},
+  "Friday":    {"message": "金曜日"},
+  "Saturday":  {"message": "土曜日"},
+ 
+  "Sun": {"message": "日"},
+  "Mon": {"message": "月"},
+  "Tue": {"message": "火"},
+  "Wed": {"message": "水"},
+  "Thu": {"message": "木"},
+  "Fri": {"message": "金"},
+  "Sat": {"message": "土"}
+
+
+}
