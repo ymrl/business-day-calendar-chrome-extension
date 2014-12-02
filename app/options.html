@@ -46,9 +46,14 @@
           <li><button v-on="click: addUrl" data-i18n-message="add">Add</button></li>
         </ul>
       </section>
+			<section id="popup-settings">
+				<h1 data-i18n-message="popupSettings">Popup</h1>
+				<section>
+					<h1 data-i18n-message="defaultCalculationSpan">Default span for calculation</h1>
+					<p><input class="span-input" type="number" name="defaultCalculationSpan" min="1" v-model="defaultCalculationSpan"> <span data-18n-message="businessDays">Business Day(s)</span> / <span data-18n-message="businessDays">Day(s)</span></p>
+				</section>
+			</section>
       <button id="save-settings" v-on="click: save" data-i18n-message="save">Save</button>
-    </section>
-    <section>
     </section>
 
               
