@@ -31,6 +31,7 @@ settings = new Vue
       label: chrome.i18n.getMessage "Saturday"
     }]
     externalCalendars:[ ]
+    defaultCalculationSpan: 3
   methods:
     save: ->
       window.saveSettings
@@ -38,15 +39,17 @@ settings = new Vue
         externalCalendars: _.filter(this.externalCalendars, (v)->v.url).map (v)->
           url: v.url
           name: v.name
+        defaultCalculationSpan: @defaultCalculationSpan
 
     removeUrl: (e)->
       @externalCalendars.splice e.targetVM.$index, 1
     addUrl: ->
       @externalCalendars.push {name: '', url: ''}
 
-window.loadSettings ['weekdays', 'externalCalendars'], (data)->
+window.loadSettings ['weekdays', 'externalCalendars', 'defaultCalculationSpan'], (data)->
   for day in settings.weekdays
     day.use = _.contains(data.weekdays, day.index)
   settings.externalCalendars = data.externalCalendars
+  settings.defaultCalculationSpan = data.defaultCalculationSpan
   if settings.externalCalendars.length is 0
     settings.externalCalendars.push {name: '', url: ''}

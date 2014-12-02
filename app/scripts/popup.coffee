@@ -80,6 +80,9 @@ calculator = new Vue
           break if m.day() is 0
         ret.push {days: arr}
       ret
+
+window.loadSettings 'defaultCalculationSpan', (data)->
+  calculator.span = data.defaultCalculationSpan
       
 nextBusinessDay calculator.startDate, calculator.span, (date)=>
   calculator.endDate = date

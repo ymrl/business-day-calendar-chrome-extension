@@ -4,6 +4,7 @@ DEFAULTS =
     url: 'https://www.google.com/calendar/ical/ja.japanese%23holiday%40group.v.calendar.google.com/public/basic.ics'
     name: 'Japanese Holidays'
   }]
+  defaultCalculationSpan: 3
 
 
 window.loadSettings = (keys, callback)->

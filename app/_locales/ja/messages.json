@@ -19,6 +19,10 @@
   "save": {"message": "保存"},
   "calendarName": {"message": "カレンダー名"},
   "calendarURL": {"message": "URL"},
+  "popupSettings": {"message": "ポップアップウィンドウの設定"},
+  "defaultCalculationSpan": {"message": "デフォルトで表示する計算日数"},
+  "businessDays": {"message": "営業日"},
+  "days": {"message": "日"},
 
   "Sunday":    {"message": "日曜日"},
   "Monday":    {"message": "月曜日"},
