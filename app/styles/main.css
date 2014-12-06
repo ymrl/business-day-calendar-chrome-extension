@@ -89,11 +89,12 @@ html.popup #calendar table td.other-month {
 }
 
 html.popup #calendar table td.business-day {
-  background: #0277BD;
+  background: #03A9F4;
   color: #fff;
   border-radius: 4px;
 }
 
 html.popup #calendar table td.today {
   font-weight: bold;
+	text-decoration: underline;
 }

@@ -19,6 +19,12 @@
   "save": {"message": "Save"},
   "calendarName": {"message": "Title"},
   "calendarURL": {"message": "URL"},
+  "popupSettings": {"message": "Popup settings"},
+  "defaultCalculationSpan": {"message": "Default span for calculation"},
+  "businessDays": {"message": "business day(s)"},
+  "days": {"message": "day(s)"},
+
+
 
 
   "Sunday":    {"message": "Sunday"   },
